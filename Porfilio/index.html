@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<!--
+  INDEX.HTML
+  This file holds the STRUCTURE / CONTENT of the website
+  (the text, headings, sections, buttons, and links).
+
+  It links out to two other files:
+    - style.css  → controls how everything LOOKS
+    - script.js  → controls how everything BEHAVES/interacts
+
+  Keeping HTML, CSS, and JS in separate files is standard
+  practice — it makes each file shorter and easier to find
+  what you're looking for.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oti Jabegu | Portfolio</title>
+
+  <!-- Google Fonts used by this design -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Our own stylesheet (all the CSS lives here now) -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ NAVIGATION BAR ============ -->
+  <nav id="navbar">
+    <div class="nav-logo">OJ</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="blog.html">Blog</a></li>
+    </ul>
+  </nav>
+
+  <!-- ============ HERO SECTION ============ -->
+  <section id="hero">
+    <!-- Decorative glowing circles in the background -->
+    <div class="orb orb1" id="orb1"></div>
+    <div class="orb orb2" id="orb2"></div>
+
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-tag">✦ Available for Work</div>
+        <h1 class="hero-name">Oti<br /><span>Jabegu</span></h1>
+        <p class="hero-sub">
+          Network & Cybersecurity Associate with hands-on experience supporting secure networks and incident response.
+        </p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-primary">View My Work →</a>
+          <a href="#contact" class="btn btn-outline">Get in Touch</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="avatar-wrap">
+          <div class="avatar-ring"></div>
+          <div class="avatar-circle">OJ</div>
+          <div class="badge badge1">
+            <div class="badge-dot"></div>
+            Open to Projects
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT SECTION ============ -->
+  <section id="about">
+    <div class="section-inner">
+      <p class="section-eyebrow fade-up">About Me</p>
+      <h2 class="section-title fade-up">Passionate About<br />Building Great Things</h2>
+
+      <div class="about-grid fade-up">
+        <div class="about-text">
+          <p>
+            Hi! I'm Oti Jabegu, a networking & cybersecurity student and
+            associate based in Kathmandu, Nepal. I support secure network
+            operations through hands-on packet analysis, access control
+            reviews, and vulnerability scanning.
+          </p>
+          <p>
+            I collaborate with system administrators to implement VLAN
+            segmentation, firewall policies, and secure remote access. I also
+            write small automation scripts to reduce manual audit work and
+            improve consistency.
+          </p>
+          <p>
+            Outside of security labs, I enjoy participating in capture-the-flag
+            challenges, studying threat intelligence, and practicing network
+            troubleshooting in virtual lab environments.
+          </p>
+          <a href="#contact" class="btn btn-primary" style="width:fit-content; margin-top:.5rem">
+            Contact Me →
+          </a>
+        </div>
+
+        <div class="blog-ad">
+  <i class="fas fa-blog"></i>
+  <h3>My Blog</h3>
+  <p>
+    Explore my latest articles, tutorials, project updates, and insights
+    on web development, networking, cybersecurity, and technology.
+  </p>
+  <a href="blog.html" class="btn">Read Articles</a>
+</div>
+  </section>
+
+  <!-- ============ SKILLS SECTION ============ -->
+  <!-- The actual skill cards are built by JavaScript (see script.js) -->
+  <section id="skills">
+    <div class="section-inner">
+      <p class="section-eyebrow fade-up">What I Do</p>
+      <h2 class="section-title fade-up">Skills &amp; Expertise</h2>
+      <p class="section-desc fade-up">
+        A blend of technical depth and creative thinking, always learning and pushing boundaries.
+      </p>
+      <div class="skills-grid" id="skills-grid">
+        <!-- filled in automatically by script.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS SECTION ============ -->
+  <!-- The actual project cards are built by JavaScript (see script.js) -->
+  <section id="projects">
+    <div class="section-inner">
+      <p class="section-eyebrow fade-up">My Work</p>
+      <h2 class="section-title fade-up">Featured Projects</h2>
+      <p class="section-desc fade-up">
+        A selection of projects I'm proud of — from small utilities to large-scale applications.
+      </p>
+      <div class="projects-grid" id="projects-grid">
+        <!-- filled in automatically by script.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT SECTION ============ -->
+  <section id="contact">
+    <div class="section-inner">
+      <p class="section-eyebrow fade-up">Say Hello</p>
+      <h2 class="section-title fade-up">Get In Touch</h2>
+
+      <div class="contact-wrap fade-up">
+        <!-- Left column: contact details -->
+        <div class="contact-info">
+          <p>
+            Whether you have a project in mind, want to collaborate, or just
+            want to chat — my inbox is always open. I'll get back to you as
+            soon as possible!
+          </p>
+
+          <div class="contact-item">
+            <div class="contact-icon">📧</div>
+            <div>
+              <div class="contact-label">Email</div>
+              <div class="contact-val">otilimbu@gmail.com</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <div class="contact-label">Location</div>
+              <div class="contact-val">Kathmandu, Nepal</div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">🐙</div>
+            <div>
+              <div class="contact-label">GitHub</div>
+              <div class="contact-val"><a href="https://github.com/cloud10-glitch" target="_blank" rel="noopener noreferrer">cloud10-glitch</a></div>
+            </div>
+          </div>
+ 
+          <div class="contact-item">
+            <div class="contact-icon">💼</div>
+            <div>
+              <div class="contact-label">LinkedIn</div>
+              <div class="contact-val"><a href="https://www.linkedin.com/in/oti-jabegu-limbu-67b0b8324" target="_blank" rel="noopener noreferrer">Oti Jabegu Limbu</a></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right column: the contact form itself -->
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input id="name" type="text" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input id="email" type="email" placeholder="john@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message </button>
+          <div id="msg-sent">✅ Message sent! I'll be in touch soon.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer>
+    
+    <p>© 2026 Oti Jabegu</p>
+    <div class="footer-links">
+      <a href="resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+      <a href="https://github.com/cloud10-glitch" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/oti-jabegu-limbu-67b0b8324" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="mailto:otilimbu@gmail.com">Email</a>
+    </div>
+  </footer>
+
+  <!-- Our own script (all the JavaScript lives here now) -->
+  <!-- Placed at the very end of <body> so the HTML above loads first -->
+  <script src="script.js"></script>
+</body>
+</html>
