@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Case Study: The Jeep Cherokee Cyber Attack | Oti Jabegu</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Blog CSS -->
+    <link rel="stylesheet" href="blog.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;500;600&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+    <!-- Internal CSS -->
+    <style>
+
+        /* Article Container */
+        .article-container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 140px 20px 80px;
+        }
+
+
+        /* Back Button */
+        .back-btn {
+            display: inline-block;
+            color: var(--accent);
+            text-decoration: none;
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+
+        .back-btn:hover {
+            text-decoration: underline;
+        }
+
+
+        /* Article */
+        .article {
+            background: #fff;
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            overflow: hidden;
+        }
+
+
+        /* Article Header */
+        .article-header {
+            text-align: center;
+            padding: 50px 40px 35px;
+        }
+
+
+        .article-date {
+            color: var(--accent);
+            font-size: 0.9rem;
+        }
+
+
+        .article-header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            line-height: 1.2;
+            margin: 15px 0;
+        }
+
+
+        .article-intro {
+            color: var(--muted);
+            line-height: 1.8;
+            max-width: 720px;
+            margin: auto;
+        }
+
+
+        /* Main Image */
+        .article-image {
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+            display: block;
+        }
+
+
+        /* Article Content */
+        .article-content {
+            padding: 40px 60px 60px;
+        }
+
+
+        .article-content h2 {
+            font-family: 'Playfair Display', serif;
+            margin-top: 40px;
+            margin-bottom: 15px;
+        }
+
+
+        .article-content p {
+            color: var(--muted);
+            line-height: 1.9;
+            margin-bottom: 18px;
+        }
+
+
+        /* Highlight Box */
+        .highlight-box {
+            background: var(--bg2);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 25px;
+            margin: 30px 0;
+            color: var(--muted);
+            line-height: 1.8;
+        }
+
+
+        .highlight-box strong {
+            color: var(--accent);
+        }
+
+
+        /* Quote Box */
+        .quote-box {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            line-height: 1.6;
+            background: var(--bg2);
+            border-left: 4px solid var(--accent);
+            border-radius: 10px;
+            padding: 30px 25px;
+            margin: 35px 0;
+        }
+
+
+        .quote-box span {
+            display: block;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.85rem;
+            color: var(--muted);
+            margin-top: 12px;
+        }
+
+
+        /* Security List */
+        .security-list {
+            margin: 20px 0 25px;
+            padding-left: 25px;
+        }
+
+
+        .security-list li {
+            color: var(--muted);
+            line-height: 1.8;
+            margin-bottom: 12px;
+        }
+
+
+        /* Impact Cards */
+        .impact-card {
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 25px;
+            margin: 20px 0;
+            background: #fff;
+        }
+
+
+        .impact-card h3 {
+            font-family: 'Playfair Display', serif;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+
+        .impact-card p {
+            margin-bottom: 0;
+        }
+
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+
+        .footer-links {
+            margin-top: 10px;
+        }
+
+
+        .footer-links a {
+            margin: 0 10px;
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+
+        /* Mobile Responsive */
+        @media (max-width: 700px) {
+
+            .article-container {
+                padding: 120px 15px 50px;
+            }
+
+            .article-header {
+                padding: 35px 20px 25px;
+            }
+
+            .article-header h1 {
+                font-size: 2.2rem;
+            }
+
+            .article-content {
+                padding: 30px 20px 40px;
+            }
+
+            .article-content h2 {
+                font-size: 1.5rem;
+            }
+
+            .quote-box {
+                font-size: 1.3rem;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- Navigation -->
+    <nav id="navbar">
+
+        <div class="nav-logo">
+            OJ
+        </div>
+
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="index.html#about">About</a>
+            </li>
+
+            <li>
+                <a href="index.html#skills">Skills</a>
+            </li>
+
+            <li>
+                <a href="index.html#projects">Projects</a>
+            </li>
+
+            <li>
+                <a href="blog.html">Blog</a>
+            </li>
+
+            <li>
+                <a href="index.html#contact">Contact</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+
+    <!-- Article Section -->
+    <main class="article-container">
+
+
+        <!-- Back Button -->
+        <a href="blog.html" class="back-btn">
+
+            <i class="fa-solid fa-arrow-left"></i>
+
+            Back to Blog
+
+        </a>
+
+
+
+        <!-- Article -->
+        <article class="article">
+
+
+            <!-- Article Header -->
+            <div class="article-header">
+
+                <span class="article-date">
+
+                    <i class="fa-solid fa-calendar"></i>
+
+                    July 2026
+
+                </span>
+
+
+                <h1>
+                    Case Study: The Jeep Cherokee Cyber Attack
+                </h1>
+
+
+                <p class="article-intro">
+
+                    Exploring the famous Jeep Cherokee hacking incident,
+                    the technical vulnerability behind the attack, its
+                    impact on public safety, and the ethical responsibilities
+                    of cybersecurity professionals.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- Main Image -->
+            <img src="C:\Users\Acer\Downloads\Porfilio\image\Screenshot 2026-09-15 211907.png"
+                 alt="Jeep Cherokee Cyber Attack"
+                 class="article-image">
+
+
+
+            <!-- Article Content -->
+            <div class="article-content">
+
+
+                <!-- Introduction -->
+                <h2>
+                    Introduction
+                </h2>
+
+
+                <p>
+
+                    When I first started learning about cybersecurity,
+                    I mostly thought about computers, websites, networks,
+                    passwords, and personal data.
+
+                </p>
+
+
+                <p>
+
+                    The Jeep Cherokee cyber attack changed the way I
+                    looked at cybersecurity. It showed me that a
+                    cybersecurity vulnerability does not always stay
+                    inside a computer. When technology is connected to
+                    physical systems, a cyber attack can potentially
+                    affect real-world safety.
+
+                </p>
+
+
+                <p>
+
+                    The Jeep Cherokee case is one of the most interesting
+                    examples of this problem because security researchers
+                    demonstrated how vulnerabilities in a connected
+                    vehicle could be used to influence important vehicle
+                    functions.
+
+                </p>
+
+
+
+                <!-- Quote -->
+                <div class="quote-box">
+
+                    "A cybersecurity problem can become
+                    a safety problem when technology
+                    controls the physical world."
+
+                    <span>
+                        — My main lesson from the Jeep Cherokee case
+                    </span>
+
+                </div>
+
+
+
+                <!-- Background -->
+                <h2>
+                    What Happened?
+                </h2>
+
+
+                <p>
+
+                    Security researchers Charlie Miller and Chris Valasek
+                    discovered vulnerabilities affecting the Uconnect
+                    system used in the Jeep Cherokee.
+
+                </p>
+
+
+                <p>
+
+                    They identified the vulnerability in 2014 and later
+                    demonstrated the attack publicly in 2015. Their
+                    research attracted worldwide attention because it
+                    demonstrated the risks associated with connected
+                    vehicles.
+
+                </p>
+
+
+                <p>
+
+                    According to my study of the case, weaknesses in the
+                    Uconnect system allowed remote access through the
+                    vehicle's cellular connection. The researchers were
+                    able to reach the vehicle's internal CAN bus and
+                    influence several vehicle functions.
+
+                </p>
+
+
+
+                <!-- Technical -->
+                <h2>
+                    How Was the Jeep Vulnerable?
+                </h2>
+
+
+                <p>
+
+                    The technical side of the incident was particularly
+                    interesting to me because several weaknesses were
+                    connected together.
+
+                </p>
+
+
+                <ul class="security-list">
+
+                    <li>
+                        The Uconnect system had an internet-connected
+                        cellular interface.
+                    </li>
+
+                    <li>
+                        The vehicle could be exposed through a public
+                        IP address.
+                    </li>
+
+                    <li>
+                        The CAN network lacked proper authentication
+                        and encryption.
+                    </li>
+
+                    <li>
+                        The infotainment system was not sufficiently
+                        isolated from important vehicle systems.
+                    </li>
+
+                </ul>
+
+
+                <p>
+
+                    These weaknesses created a path from a connected
+                    system into the vehicle's internal network.
+
+                </p>
+
+
+
+                <!-- CAN Bus -->
+                <h2>
+                    What Is the CAN Bus?
+                </h2>
+
+
+                <p>
+
+                    The Controller Area Network, commonly called CAN bus,
+                    is used by different electronic control units inside
+                    a vehicle to communicate with each other.
+
+                </p>
+
+
+                <p>
+
+                    The problem highlighted by this case was that the
+                    CAN network did not provide the type of authentication
+                    needed to ensure that every command came from a
+                    trusted source.
+
+                </p>
+
+
+                <p>
+
+                    This meant that once an attacker reached the internal
+                    network, malicious commands could potentially be sent
+                    to different vehicle systems.
+
+                </p>
+
+
+
+                <!-- Vehicle Control -->
+                <h2>
+                    What Could the Attack Affect?
+                </h2>
+
+
+                <p>
+
+                    The researchers demonstrated that they could
+                    influence important functions of the vehicle.
+
+                </p>
+
+
+                <div class="impact-card">
+
+                    <h3>
+                        <i class="fa-solid fa-car"></i>
+                        Vehicle Functions
+                    </h3>
+
+                    <p>
+
+                        The demonstration showed the ability to influence
+                        functions including steering, braking, acceleration,
+                        gear shifting, and other vehicle systems.
+
+                    </p>
+
+                </div>
+
+
+                <div class="impact-card">
+
+                    <h3>
+                        <i class="fa-solid fa-gears"></i>
+                        Internal Systems
+                    </h3>
+
+                    <p>
+
+                        Access to the CAN bus meant that the attack could
+                        move beyond the infotainment system and interact
+                        with other electronic systems inside the vehicle.
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- Public Safety -->
+                <h2>
+                    Why Was It So Serious?
+                </h2>
+
+
+                <p>
+
+                    The biggest concern was public safety.
+
+                </p>
+
+
+                <p>
+
+                    A normal data breach might result in stolen information
+                    or compromised accounts. In a connected vehicle,
+                    however, a cybersecurity vulnerability can potentially
+                    affect physical controls.
+
+                </p>
+
+
+                <p>
+
+                    The Jeep Cherokee incident demonstrated why connected
+                    vehicle security needs to be treated as a serious
+                    cybersecurity and safety issue.
+
+                </p>
+
+
+                <div class="highlight-box">
+
+                    <strong>
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                        Important Lesson:
+                    </strong>
+
+                    <br><br>
+
+                    Cybersecurity is not only about protecting information.
+                    In connected vehicles, cybersecurity can also be about
+                    protecting human life and public safety.
+
+                </div>
+
+
+
+                <!-- Social Impact -->
+                <h2>
+                    Social Impact
+                </h2>
+
+
+                <p>
+
+                    The Jeep Cherokee attack affected more than just the
+                    technical security of a vehicle. It also created
+                    concerns among consumers about the safety of connected
+                    cars.
+
+                </p>
+
+
+                <p>
+
+                    People began to think about what could happen if
+                    vehicles became vulnerable to remote cyber attacks.
+
+                </p>
+
+
+                <p>
+
+                    The case also highlighted privacy concerns because
+                    connected vehicles can collect information about
+                    locations, routes, and user behaviour.
+
+                </p>
+
+
+                <p>
+
+                    Another important issue was awareness. Many vehicle
+                    users may not understand that modern vehicles contain
+                    complex computer systems and network connections.
+
+                </p>
+
+
+
+                <!-- Psychological Impact -->
+                <h2>
+                    The Human Side of the Attack
+                </h2>
+
+
+                <p>
+
+                    One part of the case that stood out to me was the
+                    psychological impact.
+
+                </p>
+
+
+                <p>
+
+                    Imagine driving a vehicle and suddenly realizing that
+                    someone else may be able to interfere with its systems.
+                    That situation can create fear and a feeling of losing
+                    control.
+
+                </p>
+
+
+                <p>
+
+                    This helped me understand that cybersecurity is closely
+                    connected to people's trust, confidence, and sense of
+                    safety.
+
+                </p>
+
+
+
+                <!-- Ethical Issues -->
+                <h2>
+                    Was the Research Ethical?
+                </h2>
+
+
+                <p>
+
+                    The case also raises an important ethical question:
+                    was it right for researchers to demonstrate the
+                    vulnerability publicly?
+
+                </p>
+
+
+                <p>
+
+                    Miller and Valasek first notified Fiat Chrysler
+                    Automobiles about the security problem before the
+                    public demonstration.
+
+                </p>
+
+
+                <p>
+
+                    This can be viewed as responsible vulnerability
+                    disclosure because the manufacturer was given an
+                    opportunity to investigate and fix the problem.
+
+                </p>
+
+
+                <p>
+
+                    However, publicly demonstrating such a serious
+                    vulnerability also created concerns about possible
+                    misuse.
+
+                </p>
+
+
+                <p>
+
+                    This creates an ethical balance between informing the
+                    public about an important security problem and
+                    preventing information from being used to cause harm.
+
+                </p>
+
+
+
+                <!-- Manufacturer -->
+                <h2>
+                    Responsibility of the Manufacturer
+                </h2>
+
+
+                <p>
+
+                    Another important lesson from the case is the
+                    responsibility of manufacturers.
+
+                </p>
+
+
+                <p>
+
+                    Security should be considered during the design and
+                    development of connected vehicles instead of being
+                    treated as something that can be added later.
+
+                </p>
+
+
+                <p>
+
+                    Proper authentication, network isolation, threat
+                    modelling, security testing, and vulnerability
+                    assessment should be considered when designing
+                    systems that can affect public safety.
+
+                </p>
+
+
+
+                <!-- Risk Management -->
+                <h2>
+                    Risk Management Failure
+                </h2>
+
+
+                <p>
+
+                    The case also demonstrated the importance of proper
+                    risk management.
+
+                </p>
+
+
+                <p>
+
+                    Remote access risks should have been identified during
+                    threat modelling. The connection between infotainment
+                    systems and important vehicle systems also needed
+                    stronger protection.
+
+                </p>
+
+
+                <p>
+
+                    Regular penetration testing and vulnerability
+                    assessments could help identify weaknesses before
+                    attackers discover them.
+
+                </p>
+
+
+
+                <!-- Recall -->
+                <h2>
+                    What Happened After the Discovery?
+                </h2>
+
+
+                <p>
+
+                    Following the discovery and public demonstration,
+                    Fiat Chrysler Automobiles responded to the issue and
+                    made a software security update available.
+
+                </p>
+
+
+                <p>
+
+                    The company also conducted a recall affecting
+                    approximately 1.4 million vehicles.
+
+                </p>
+
+
+                <p>
+
+                    This showed the scale of the problem and the importance
+                    of responding quickly when a vulnerability can affect
+                    the safety of users.
+
+                </p>
+
+
+
+                <!-- Professional Responsibility -->
+                <h2>
+                    Professional Responsibility
+                </h2>
+
+
+                <p>
+
+                    As someone learning cybersecurity, this case helped
+                    me understand that technical skills come with
+                    responsibility.
+
+                </p>
+
+
+                <p>
+
+                    A cybersecurity professional may have the ability to
+                    discover vulnerabilities, but they also need to
+                    understand how their actions could affect other people.
+
+                </p>
+
+
+                <p>
+
+                    Professional ethics should encourage security
+                    professionals to protect users, avoid unnecessary
+                    harm, maintain integrity, and consider the public
+                    interest.
+
+                </p>
+
+
+
+                <!-- What I Learned -->
+                <h2>
+                    What I Learned From the Jeep Attack
+                </h2>
+
+
+                <p>
+
+                    Studying the Jeep Cherokee cyber attack gave me
+                    several important lessons about cybersecurity.
+
+                </p>
+
+
+                <ul class="security-list">
+
+                    <li>
+                        Connected devices must be designed with security
+                        from the beginning.
+                    </li>
+
+                    <li>
+                        Internet connectivity can create new attack
+                        surfaces.
+                    </li>
+
+                    <li>
+                        Critical systems should be separated from less
+                        trusted systems.
+                    </li>
+
+                    <li>
+                        Authentication and access control are essential.
+                    </li>
+
+                    <li>
+                        Regular security testing can help identify
+                        vulnerabilities.
+                    </li>
+
+                    <li>
+                        Vulnerabilities should be disclosed responsibly.
+                    </li>
+
+                    <li>
+                        Cybersecurity decisions can affect public safety.
+                    </li>
+
+                    <li>
+                        Technical knowledge should be combined with
+                        ethical responsibility.
+                    </li>
+
+                </ul>
+
+
+
+                <!-- Personal Reflection -->
+                <h2>
+                    My Personal Reflection
+                </h2>
+
+
+                <p>
+
+                    Before studying this case, I usually connected
+                    cybersecurity with computers, websites, and networks.
+
+                </p>
+
+
+                <p>
+
+                    The Jeep Cherokee incident helped me understand that
+                    cybersecurity is much bigger than that.
+
+                </p>
+
+
+                <p>
+
+                    Today, vehicles, medical devices, smart homes,
+                    industrial systems, and many other physical devices
+                    are becoming connected to networks.
+
+                </p>
+
+
+                <p>
+
+                    This means that cybersecurity professionals need to
+                    think about not only data protection but also safety,
+                    privacy, ethics, and the consequences of a successful
+                    attack.
+
+                </p>
+
+
+                <p>
+
+                    For me, the Jeep Cherokee case is a reminder that
+                    technology should always be developed with
+                    responsibility.
+
+                </p>
+
+
+
+                <!-- Final Quote -->
+                <div class="quote-box">
+
+                    "The more connected our world becomes,
+                    the more important cybersecurity becomes."
+
+                    <span>
+                        — Oti Jabegu
+                    </span>
+
+                </div>
+
+
+
+                <!-- Conclusion -->
+                <h2>
+                    Conclusion
+                </h2>
+
+
+                <p>
+
+                    The Jeep Cherokee cyber attack demonstrated the serious
+                    risks that can arise when connected systems are not
+                    properly secured.
+
+                </p>
+
+
+                <p>
+
+                    The case showed that vulnerabilities in a vehicle's
+                    connected systems could potentially move from the
+                    digital world into the physical world.
+
+                </p>
+
+
+                <p>
+
+                    For me, the biggest lesson is that cybersecurity must
+                    be considered from the beginning of system design.
+                    Security testing, strong authentication, network
+                    isolation, risk management, responsible disclosure,
+                    and ethical decision-making are all important.
+
+                </p>
+
+
+                <p>
+
+                    As I continue developing my skills in networking and
+                    cybersecurity, this case reminds me that being a good
+                    technology professional is not only about knowing how
+                    to find a vulnerability.
+
+                </p>
+
+
+                <p>
+
+                    It is also about understanding the responsibility that
+                    comes with that knowledge and using it to help make
+                    technology safer.
+
+                </p>
+
+
+                <div class="quote-box">
+
+                    "Technology can be powerful,
+                    but responsible technology is what makes it valuable."
+
+                    <span>
+                        — Oti Jabegu
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+        </article>
+
+    </main>
+
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Oti Jabegu
+        </p>
+
+
+        <div class="footer-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="blog.html">
+                Blog
+            </a>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+    <script src="blog.js"></script>
+
+
+</body>
+</html>

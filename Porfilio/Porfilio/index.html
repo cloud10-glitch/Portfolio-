@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<!--
+  INDEX.HTML
+  This file holds the STRUCTURE / CONTENT of the website
+  (the text, headings, sections, buttons, and links).
+
+  It links out to two other files:
+    - style.css  → controls how everything LOOKS
+    - script.js  → controls how everything BEHAVES/interacts
+
+  Keeping HTML, CSS, and JS in separate files is standard
+  practice — it makes each file shorter and easier to find
+  what you're looking for.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oti Jabegu | Portfolio</title>
+
+  <!-- Google Fonts used by this design -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Our own stylesheet (all the CSS lives here now) -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ NAVIGATION BAR ============ -->
+  <nav id="navbar">
+    <div class="nav-logo">OJ</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#business">Business</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="blog.html">Blog</a></li>
+    </ul>
+  </nav>
+
+  <!-- ============ HERO SECTION ============ -->
+  <section id="hero">
+    <!-- Decorative glowing circles in the background -->
+    <div class="orb orb1" id="orb1"></div>
+    <div class="orb orb2" id="orb2"></div>
+
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-tag">✦ Available for Work</div>
+        <h1 class="hero-name">Oti<br /><span>Jabegu</span></h1>
+        <p class="hero-sub">
+          Network & Cybersecurity Associate with hands-on experience supporting secure networks and incident response.
+        </p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-primary">View My Work →</a>
+          <a href="#contact" class="btn btn-outline">Get in Touch</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="avatar-wrap">
+          <div class="avatar-ring"></div>
+          <div class="avatar-circle">OJ</div>
+          <div class="badge badge1">
+            <div class="badge-dot"></div>
+            Open to Projects
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT SECTION ============ -->
+  <section id="about">
+    <div class="section-inner">
+      <p class="section-eyebrow fade-up">About Me</p>
+      <h2 class="section-title fade-up">Passionate About<br />Building Great Things</h2>
+
+      <div class="about-grid fade-up">
+        <div class="about-text">
+          <p>
+            Hi! I'm Oti Jabegu, a networking & cybersecurity student and
+            associate based in Kathmandu, Nepal. I support secure network
+            operations through hands-on packet analysis, access control
+            reviews, and vulnerability scanning.
+          </p>
+          <p>
+            I collaborate with system administrators to implement VLAN
+            segmentation, firewall policies, and secure remote access. I also
+            write small automation scripts to reduce manual audit work and
+            improve consistency.
+          </p>
+          <p>
+            Outside of security labs, I enjoy practicing network
+            troubleshooting in virtual lab environments and as a girl I like creating minimal fashion content on social media with the business mindset . 
+            I  also love to travel and explore new cultures, which inspires my work and creativity.
+          </p>
+          <a href="#contact" class="btn btn-primary" style="width:fit-content; margin-top:.5rem">
+            Contact Me →
+          </a>
+        </div>
+
+        <div class="blog-ad" style="display:block; visibility:visible; opacity:1">
+          <i class="fas fa-blog"></i>
+          <h3>My Blog</h3>
+          <p>
+            Explore my latest articles, tutorials, project updates, and insights
+            on web development, networking, cybersecurity, and technology.
+          </p>
+          <a href="Porfilio/blog.html" class="btn">Read Articles</a>
+        </div>
+      </div>
+  </section>
+
+  <!-- ============ SKILLS SECTION ============ -->
+  <!-- The actual skill cards are built by JavaScript (see script.js) -->
+  <section id="skills">
+    <div class="section-inner">
+      <p class="section-eyebrow fade-up">What I Do</p>
+      <h2 class="section-title fade-up">Skills &amp; Expertise</h2>
+      <p class="section-desc fade-up">
+        A blend of technical depth and creative thinking, always learning and pushing boundaries.
+      </p>
+      <div class="skills-grid" id="skills-grid">
+        <!-- filled in automatically by script.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS SECTION ============ -->
+  <!-- The actual project cards are built by JavaScript (see script.js) -->
+  <section id="projects">
+    <div class="section-inner">
+      <p class="section-eyebrow fade-up">My Work</p>
+      <h2 class="section-title fade-up">Featured Projects</h2>
+      <p class="section-desc fade-up">
+        A selection of projects I'm proud of — from small utilities to large-scale applications.
+      </p>
+      <div class="projects-grid" id="projects-grid">
+        <!-- filled in automatically by script.js -->
+      </div>
+    </div>
+  </section>
+  <!-- ============ BUSINESS SECTION ============ -->
+
+<section id="business">
+  <div class="section-inner">
+<p class="section-eyebrow fade-up">My Business</p>
+
+<h2 class="section-title fade-up">
+  Building Ideas Into<br />Real Businesses
+</h2>
+
+<p class="section-desc fade-up">
+  Combining creativity, technology, and business thinking to build
+  meaningful brands and digital experiences.
+</p>
+
+<div class="business-grid fade-up">
+
+  <!-- Business Card -->
+  <div class="business-card">
+    <div class="business-icon">👗</div>
+
+    <div class="business-content">
+      <span class="business-tag">Fashion Brand</span>
+
+      <h3>Fung Wears</h3>
+
+      <p>
+        A fashion-focused brand created with a passion for modern,
+        minimal, and stylish clothing. Fung Wears focuses on creating
+        simple designs that combine comfort, creativity, and everyday style.
+      </p>
+
+      <div class="business-features">
+        <span>✦ Fashion</span>
+        <span>✦ Branding</span>
+        <span>✦ Social Media</span>
+      </div>
+
+      <a
+        href="https://www.instagram.com/fung_wears/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn btn-primary"
+      >
+        Visit Fung Wears →
+      </a>
+    </div>
+  </div>
+
+  <!-- Business Idea Card -->
+  <div class="business-card business-card-alt">
+    <div class="business-icon">💡</div>
+
+    <div class="business-content">
+      <span class="business-tag">Entrepreneurship</span>
+
+      <h3>Creative Business</h3>
+
+      <p>
+        Exploring business opportunities by combining technology,
+        fashion, digital marketing, and creative ideas to develop
+        useful and sustainable products.
+      </p>
+
+      <div class="business-features">
+        <span>✦ Innovation</span>
+        <span>✦ Marketing</span>
+        <span>✦ Technology</span>
+      </div>
+
+      <a href="#contact" class="btn btn-outline">
+        Let's Collaborate →
+      </a>
+    </div>
+  </div>
+
+</div>
+```
+
+  </div>
+</section>
+
+
+  <!-- ============ CONTACT SECTION ============ -->
+  <section id="contact">
+    <div class="section-inner">
+      <p class="section-eyebrow fade-up">Say Hello</p>
+      <h2 class="section-title fade-up">Get In Touch</h2>
+
+      <div class="contact-wrap fade-up">
+        <!-- Left column: contact details -->
+        <div class="contact-info">
+          <p>
+            Whether you have a project in mind, want to collaborate, or just
+            want to chat — my inbox is always open. I'll get back to you as
+            soon as possible!
+          </p>
+
+          <div class="contact-item">
+            <div class="contact-icon">📧</div>
+            <div>
+              <div class="contact-label">Email</div>
+              <div class="contact-val">otilimbu@gmail.com</div>
+              </div>
+            </div>
+          </div>
+<div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <div class="contact-label">Location</div>
+              <div class="contact-val">Kathmandu, Nepal</div>
+            </div>
+          </div>
+          
+
+          <div class="contact-item">
+            <div class="contact-icon">🐙</div>
+            <div>
+              <div class="contact-label">GitHub</div>
+              <div class="contact-val"><a href="https://github.com/cloud10-glitch" target="_blank" rel="noopener noreferrer">cloud10-glitch</a></div>
+            </div>
+          </div>
+          
+
+          <div class="contact-item">
+            <div class="contact-icon">📷</div>
+            <div>
+              <div class="contact-label">Instagram</div>
+              <div class="contact-val"><a href="https://www.instagram.com/fung_wears/" target="_blank" rel="noopener noreferrer">Fung Wear</a></div>
+            </div>
+          </div>
+ 
+          <div class="contact-item">
+            <div class="contact-icon">💼</div>
+            <div>
+              <div class="contact-label">LinkedIn</div>
+              <div class="contact-val"><a href="https://www.linkedin.com/in/oti-jabegu-limbu-67b0b8324" target="_blank" rel="noopener noreferrer">Oti Jabegu Limbu</a></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right column: the contact form itself -->
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input id="name" type="text" placeholder="oti limbu" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input id="email" type="email" placeholder="otilimbu@gmail.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message </button>
+          <div id="msg-sent">✅ Message sent! I'll be in touch soon.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer>
+    
+    <p>© 2026 Oti Jabegu</p>
+    <div class="footer-links">
+      <a href="c:\Users\Acer\Downloads\Oti Jabegu CV6.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+      <a href="https://github.com/cloud10-glitch" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/oti-jabegu-limbu-67b0b8324" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="mailto:otilimbu@gmail.com">Email</a>
+    </div>
+  </footer>
+
+  <!-- Our own script (all the JavaScript lives here now) -->
+  <!-- Placed at the very end of <body> so the HTML above loads first -->
+  <script src="script.js"></script>
+</body>
+</html>

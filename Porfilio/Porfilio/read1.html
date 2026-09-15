@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Travel Log: Exploring Mustang | Oti Jabegu</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Internal CSS -->
+    <style>
+
+        /* Article Container */
+        .article-container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 140px 20px 80px;
+        }
+
+        /* Back Button */
+        .back-btn {
+            display: inline-block;
+            color: var(--accent);
+            text-decoration: none;
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+
+        .back-btn:hover {
+            text-decoration: underline;
+        }
+
+        /* Article */
+        .article {
+            background: #fff;
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            overflow: hidden;
+        }
+
+        /* Article Header */
+        .article-header {
+            text-align: center;
+            padding: 50px 40px 30px;
+        }
+
+        .article-date {
+            color: var(--accent);
+            font-size: 0.9rem;
+        }
+
+        .article-header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            margin: 15px 0;
+        }
+
+        .article-intro {
+            color: var(--muted);
+            line-height: 1.8;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        /* Main Image */
+        .article-image {
+            width: 100%;
+            max-height: 550px;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Second Image */
+        .article-image-second {
+            width: 100%;
+            max-height: 550px;
+            object-fit: cover;
+            display: block;
+            margin: 30px 0;
+            border-radius: 12px;
+        }
+
+        /* Image Caption */
+        .image-caption {
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.9rem;
+            margin: 12px 20px 30px;
+        }
+
+        /* Article Content */
+        .article-content {
+            padding: 40px 60px 60px;
+        }
+
+        .article-content h2 {
+            font-family: 'Playfair Display', serif;
+            margin-top: 35px;
+            margin-bottom: 15px;
+        }
+
+        .article-content p {
+            color: var(--muted);
+            line-height: 1.9;
+            margin-bottom: 18px;
+        }
+
+        /* Quote */
+        .life-quote {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.7rem;
+            line-height: 1.6;
+            padding: 30px 20px;
+            margin: 35px 0;
+            background: var(--bg2);
+            border-left: 4px solid var(--accent);
+            border-radius: 10px;
+        }
+
+        .life-quote span {
+            display: block;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9rem;
+            margin-top: 12px;
+            color: var(--muted);
+        }
+
+        /* Highlight Box */
+        .highlight-box {
+            background: var(--bg2);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 25px;
+            margin: 30px 0;
+            color: var(--muted);
+            line-height: 1.8;
+        }
+
+        .highlight-box strong {
+            color: var(--accent);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .footer-links {
+            margin-top: 10px;
+        }
+
+        .footer-links a {
+            margin: 0 10px;
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 700px) {
+
+            .article-container {
+                padding: 120px 15px 50px;
+            }
+
+            .article-header {
+                padding: 35px 20px 25px;
+            }
+
+            .article-header h1 {
+                font-size: 2.2rem;
+            }
+
+            .article-content {
+                padding: 30px 20px 40px;
+            }
+
+            .article-content h2 {
+                font-size: 1.5rem;
+            }
+
+            .article-image {
+                max-height: 400px;
+            }
+
+            .article-image-second {
+                max-height: 400px;
+            }
+
+            .life-quote {
+                font-size: 1.3rem;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+
+        <div class="nav-logo">OJ</div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#skills">Skills</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+
+    </nav>
+
+
+    <!-- Article Section -->
+    <main class="article-container">
+
+        <!-- Back Button -->
+        <a href="blog.html" class="back-btn">
+            <i class="fa-solid fa-arrow-left"></i>
+            Back to Blog
+        </a>
+
+
+        <!-- Article -->
+        <article class="article">
+
+
+            <!-- Article Header -->
+            <div class="article-header">
+
+                <span class="article-date">
+                    <i class="fa-solid fa-calendar"></i>
+                    September 2026
+                </span>
+
+                <h1>
+                    Travel Log: Exploring Mustang
+                </h1>
+
+                <p class="article-intro">
+                    A beautiful journey through Mustang, Nepal, filled with
+                    peaceful moments, breathtaking mountains, traditional
+                    villages, and a feeling of gratitude for this beautiful life.
+                </p>
+
+            </div>
+
+
+            <!-- First Image -->
+            <img src="C:\Users\Acer\Downloads\Porfilio\image\IMG_0545.jpeg" 
+                 alt="Traditional Mustang village nestled among rugged Himalayan mountains beneath a clear blue sky, creating a peaceful and scenic atmosphere"
+                 class="article-image">
+
+            <p class="image-caption">
+                A peaceful moment surrounded by the beautiful mountains of Mustang.
+            </p>
+
+
+            <!-- Article Content -->
+            <div class="article-content">
+
+
+                <!-- Introduction -->
+                <h2>Introduction</h2>
+
+                <p>
+                    Sometimes life gives us moments that are difficult to
+                    explain with words. My journey to Mustang was one of those
+                    moments. Surrounded by mountains, beautiful villages,
+                    fresh air, and endless blue skies, I felt truly grateful
+                    to be there.
+                </p>
+
+                <p>
+                    This journey was not only about visiting a new place.
+                    It was about enjoying the moment, appreciating nature,
+                    creating memories, and reminding myself how beautiful
+                    life can be.
+                </p>
+
+
+                <!-- Quote -->
+                <div class="life-quote">
+
+                    "I am pleased to live this life — to explore,
+                    to experience, and to create beautiful memories."
+
+                    <span>— Oti Jabegu</span>
+
+                </div>
+
+
+                <!-- Beauty of Mustang -->
+                <h2>The Beauty of Mustang</h2>
+
+                <p>
+                    Mustang is one of the most beautiful places I have
+                    experienced. The huge mountains surrounding the area
+                    create a view that feels almost unreal.
+                </p>
+
+                <p>
+                    The combination of rocky mountains, green forests,
+                    traditional houses, white clouds, and bright blue skies
+                    made every moment feel special.
+                </p>
+
+                <p>
+                    I found myself stopping again and again just to look at
+                    the mountains and enjoy the view. Sometimes, there is
+                    nothing better than simply standing quietly and
+                    appreciating nature.
+                </p>
+
+
+                <!-- Second Image -->
+                <img src="C:\Users\Acer\Downloads\Porfilio\image\IMG_0546.jpeg"
+                     alt="Snow covered mountains of Mustang"
+                     class="article-image-second">
+
+                <p class="image-caption">
+                    The magnificent snow-covered Himalayan mountains of Mustang.
+                </p>
+
+
+                <!-- Living the Moment -->
+                <h2>Living in the Moment</h2>
+
+                <p>
+                    We often become busy thinking about the future. We think
+                    about our studies, careers, responsibilities, and the
+                    things we still want to achieve.
+                </p>
+
+                <p>
+                    But this journey reminded me that we should also take
+                    time to enjoy where we are today.
+                </p>
+
+                <p>
+                    Standing in front of these mountains, I was not thinking
+                    about anything else. I was simply enjoying the moment.
+                    The peaceful surroundings made me feel happy and thankful.
+                </p>
+
+
+                <!-- Highlight -->
+                <div class="highlight-box">
+
+                    <strong>
+                        <i class="fa-solid fa-heart"></i>
+                        My Favorite Moment:
+                    </strong>
+
+                    <br><br>
+
+                    Looking at the mountains and realizing how lucky I am to
+                    experience this beautiful world. It was one of those
+                    simple moments when I felt completely happy and thought,
+                    "I am pleased to live this life."
+
+                </div>
+
+
+                <!-- Traditional Village -->
+                <h2>Traditional Villages</h2>
+
+                <p>
+                    Another beautiful part of Mustang is its traditional
+                    villages. The stone houses, narrow paths, mountain
+                    surroundings, and simple lifestyle give the region a
+                    unique character.
+                </p>
+
+                <p>
+                    Walking through these villages allowed me to appreciate
+                    the peaceful lifestyle and traditional beauty of the
+                    region.
+                </p>
+
+                <p>
+                    Away from the busy city environment, everything seemed
+                    slower and calmer. It made me realize that happiness
+                    does not always require complicated things.
+                </p>
+
+
+                <!-- Mountains -->
+                <h2>Lost in the Mountains</h2>
+
+                <p>
+                    The mountains were definitely the highlight of my trip.
+                    Seeing the snow-covered peaks rising above the landscape
+                    was an unforgettable experience.
+                </p>
+
+                <p>
+                    The clouds moving around the mountains made the scenery
+                    even more beautiful. Every view looked like a picture
+                    that I wanted to keep forever.
+                </p>
+
+                <p>
+                    I took photographs to capture these moments, but some
+                    feelings cannot truly be captured in a photograph.
+                    They have to be experienced.
+                </p>
+
+
+                <!-- Gratitude -->
+                <h2>Feeling Grateful</h2>
+
+                <p>
+                    This journey made me realize how much there is to be
+                    grateful for. Having the opportunity to travel, explore
+                    nature, meet people, and experience different places is
+                    something I truly value.
+                </p>
+
+                <p>
+                    Life may not always be perfect, but there are beautiful
+                    moments that make everything worthwhile.
+                </p>
+
+                <p>
+                    Mustang gave me one of those moments.
+                </p>
+
+
+                <!-- Life Lesson -->
+                <h2>A Little Reminder to Myself</h2>
+
+                <p>
+                    I want to remember that life is not only about reaching
+                    the next goal. It is also about enjoying the journey
+                    along the way.
+                </p>
+
+                <p>
+                    I want to travel more, see more places, meet different
+                    people, learn new things, and collect memories instead
+                    of only collecting things.
+                </p>
+
+                <div class="life-quote">
+
+                    "Enjoy the journey. Appreciate the moment.
+                    Be grateful for the life you have."
+
+                </div>
+
+
+                <!-- Conclusion -->
+                <h2>Conclusion</h2>
+
+                <p>
+                    My journey through Mustang was more than just a trip.
+                    It was a beautiful reminder to slow down and appreciate
+                    life.
+                </p>
+
+                <p>
+                    The mountains, peaceful villages, fresh air, beautiful
+                    skies, and unforgettable views created memories that I
+                    will always carry with me.
+                </p>
+
+                <p>
+                    <img src="C:\Users\Acer\Downloads\Porfilio\image\IMG_0547.jpeg"
+                         alt="Snow-covered Himalayan mountains of Mustang"
+                         class="article-image-second">
+
+                    Looking back at these photographs, I feel happy knowing
+                    that I experienced those moments.There is still so much of the world to explore, so many
+                    places to see, and so many memories waiting to be made.
+                </p>
+
+                <p>
+                    Until then, I will continue to appreciate the little
+                    moments and be thankful for the journey.
+                </p>
+
+                <div class="life-quote">
+
+                    "I am pleased to live this life." 
+
+                    <span>
+                        Grateful for the journey, the memories,
+                        and every beautiful moment.
+                    </span>
+
+                </div>
+
+
+            </div>
+
+        </article>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>© 2026 Oti Jabegu</p>
+
+        <div class="footer-links">
+
+            <a href="index.html">Home</a>
+            <a href="blog.html">Blog</a>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script src="blog.js"></script>
+
+</body>
+</html>
